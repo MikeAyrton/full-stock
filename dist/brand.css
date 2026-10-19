@@ -149,3 +149,21 @@ h1,h2,h3,strong{color:#0A2B60}h1,h2{font-weight:650}a:focus-visible,button:focus
 .guarantee-fund small{font-size:12px;font-weight:500;letter-spacing:.04em;color:#617384}
 .company-profile-text .guarantee-fund{max-width:640px;margin:26px 0 22px}
 @media(max-width:600px){.guarantee-fund dd{font-size:22px;gap:6px 22px}}
+
+.team-card-content{text-align:center;display:flex;flex-direction:column;align-items:center;height:100%}.team-card{display:flex;flex-direction:column}.team-photo-placeholder{flex-shrink:0}.team-card-content h3{max-width:100%;text-wrap:balance}.team-card-content .team-role{text-wrap:balance}.team-card-content .team-phone{margin-top:auto;padding-top:8px;white-space:nowrap}.team-phone a{color:inherit;text-decoration:none}.team-phone a:hover{text-decoration:underline}
+
+/* Readable staff roles and phone numbers at every screen size. */
+.team-card-content .team-role{font-size:16px;line-height:1.5}
+.team-card-content .team-phone{font-size:16px;line-height:1.5}
+@media(min-width:601px) and (max-width:850px){.team-card-content .team-role,.team-card-content .team-phone{font-size:14px}}
+
+.team-phone a{transition:color 180ms ease}
+.team-phone a:hover,.team-phone a:focus-visible{color:#00B8FF}
+@media(prefers-reduced-motion:reduce){.team-phone a{transition:none}}
+
+/* Original company logo, with its natural proportions preserved. */
+.header .brand{width:112px;line-height:0}
+.header .brand img{display:block;width:100%;height:auto;object-fit:contain}
+.footer .brand,.tariff-page .footer .brand{display:inline-block;width:168px;max-width:none;padding:12px;background:#fff;border-radius:6px;line-height:0}
+.footer .brand img{display:block;width:144px;max-width:100%;height:auto;object-fit:contain}
+@media(max-width:850px){.header .brand{width:100px}}
