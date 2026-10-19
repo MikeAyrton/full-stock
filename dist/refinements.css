@@ -1,0 +1,13 @@
+/* Sans serif typography, persistent CBU ticker and the revised first screen. */
+h1,h2{font-family:var(--font);font-weight:600;letter-spacing:-.035em;line-height:1.18}
+.fact strong{font-size:30px;font-weight:500}.step .step-num{font-weight:400}.page-title h1{font-size:48px}.about-grid h2{font-size:38px}
+.topbar,.tariff-page .topbar{display:block;background:#0A2B60;color:#e0e7ee;font-size:11px;letter-spacing:0}
+.topbar .container.fx-bar{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:42px;padding:0}
+.fx-source{display:flex;align-items:center;gap:8px;white-space:nowrap;color:#c3d1dc;font-size:11px}
+.fx-source:hover{color:#fff}.fx-dot{width:5px;height:5px;background:#b4c7d7;border-radius:50%;display:block}
+.fx-values{display:flex;justify-content:center;gap:30px;margin-left:auto}
+.fx-item{display:flex;gap:9px;align-items:baseline;white-space:nowrap;font-variant-numeric:tabular-nums}
+.fx-code{color:#9fb3c3;font-size:10px;font-weight:600;letter-spacing:.03em}.fx-value{color:#fff;font-size:11px;font-weight:500}
+.fx-meta{display:flex;gap:8px;align-items:center;white-space:nowrap;color:#9fb3c3;font-size:10px}
+#fx-refresh{border:0;background:transparent;color:#c3d1dc;width:40px;height:42px;display:flex;align-items:center;justify-content:center;margin-right:-10px}
+#fx-refresh:hover{color:#fff;background:#ffffff0c}#fx-refresh:disabled{opacity:.4}.fx-cached .fx-value{color:#d4dce2}
