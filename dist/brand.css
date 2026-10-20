@@ -202,3 +202,10 @@ h1,h2,h3,strong{color:#0A2B60}h1,h2{font-weight:650}a:focus-visible,button:focus
  .footer-bottom button{font-size:14px}
 }
 @media(max-width:600px){body{--compact-header-height:78px}}
+
+/* Paint the area behind translucent iOS browser chrome with the header color. */
+html{background:#fafbfc}
+@media(max-width:1200px){
+ .header{overflow:visible}
+ .header::before{content:"";position:absolute;left:0;right:0;bottom:100%;height:200px;background:#fafbfc;pointer-events:none}
+}
