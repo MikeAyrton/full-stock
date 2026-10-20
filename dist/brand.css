@@ -167,3 +167,38 @@ h1,h2,h3,strong{color:#0A2B60}h1,h2{font-weight:650}a:focus-visible,button:focus
 .footer .brand,.tariff-page .footer .brand{display:inline-block;width:168px;max-width:none;padding:12px;background:#fff;border-radius:6px;line-height:0}
 .footer .brand img{display:block;width:144px;max-width:100%;height:auto;object-fit:contain}
 @media(max-width:850px){.header .brand{width:100px}}
+
+/* Comfortable reading sizes on phones and tablets. */
+@media(max-width:1200px){
+ #main p:not(.eyebrow){font-size:16px;line-height:1.7}
+ #main .hero-editorial-description{font-size:18px;line-height:1.7}
+ #main .hero-editorial-note{font-size:14px;line-height:1.6}
+ #main .inline-link{font-size:16px;gap:0;min-height:44px}
+ #main .inline-link>span[aria-hidden="true"]{display:none}
+ #main .fact span,#main .checklist li{font-size:16px;line-height:1.65}
+ #main .breadcrumb,#main .guarantee-fund dt,#main .contact-item dt{font-size:14px;line-height:1.6}
+ #main .guarantee-fund small{font-size:14px}
+ #main .eyebrow{font-size:12px;line-height:1.6;letter-spacing:.1em}
+ #main .field,#main .consent{font-size:14px;line-height:1.6}
+ #main input,#main textarea,#main select{font-size:16px}
+ #main .certificate-download{font-size:15px}
+ #main .team-card h3{font-size:18px;line-height:1.4}
+ .footer p,.footer small,.footer-bottom,.footer .demo-email,.footer-grid>div:nth-child(2) a{font-size:14px;line-height:1.7}
+ .fx-source,.fx-code,.fx-value,.fx-meta{font-size:12px}
+ .fx-values{flex-wrap:wrap;row-gap:8px}
+}
+@media(min-width:601px) and (max-width:1100px){.team-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Pin the header directly to the viewport in mobile in-app browsers. */
+@media(max-width:1200px){
+ body{--compact-header-height:88px;padding-top:calc(var(--compact-header-height) + env(safe-area-inset-top,0px))}
+ .header{position:fixed;inset:0 0 auto;top:0;padding-top:env(safe-area-inset-top,0px);width:100%;background:#fafbfc;z-index:100}
+ .header .header-inner{height:var(--compact-header-height)}
+ .header nav{max-height:calc(100dvh - var(--compact-header-height) - env(safe-area-inset-top,0px));overflow-y:auto}
+ html{scroll-padding-top:calc(100px + env(safe-area-inset-top,0px))}
+ #main .contact-note,#main .document-note,#main .form-status{font-size:14px;line-height:1.7}
+ #main .consent span{font-size:14px;line-height:1.6}
+ #main .service-card p,#main .step p,#main .value p,#main .about-copy p{color:#53697d}
+ .footer-bottom button{font-size:14px}
+}
+@media(max-width:600px){body{--compact-header-height:78px}}
